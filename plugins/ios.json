@@ -1,0 +1,75 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": "false",
+                            "count": 2
+                        }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "true",
+                            "count": 2
+                        }
+                    ],
+                    "AddressBook.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ],
+                    "AddressBookUI.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"ios-package\" value=\"CDVVibration\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Contacts\"><param name=\"ios-package\" value=\"CDVContacts\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "com.vg.first"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.vg.first"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.vg.first"
+        },
+        "org.apache.cordova.contacts": {
+            "PACKAGE_NAME": "com.vg.first"
+        }
+    },
+    "dependent_plugins": {}
+}
